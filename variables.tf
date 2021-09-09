@@ -146,6 +146,7 @@ locals {
       java       = ["11-java11", "8-jre"]
       tomcat     = ["9.0-java11", "8.5-java11", "9.0-jre8", "8.5-jre8"]
       wildfly    = ["14-jre8"]
+      jbosseap   = ["7-java8"]
       python     = ["3.7", "3.6", "2.7"]
     }
   }
@@ -183,7 +184,7 @@ locals {
     "Basic"            = ["B1", "B2", "B3"]
     "Standard"         = ["S1", "S2", "S3"]
     "Premium"          = ["P1", "P2", "P3"]
-    "PremiumV2"        = ["P1v2", "P2v2", "P3v2"]
+    "PremiumV2"        = ["P1v2", "P1v3", "P2v2", "P3v2"]
     "PremiumContainer" = ["PC2", "PC3", "PC4"]
     "ElasticPremium"   = ["EP1", "EP2", "EP3"]
   }
