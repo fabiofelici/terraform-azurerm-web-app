@@ -110,6 +110,12 @@ variable "tags" {
   description = "A mapping of tags to assign to the web app."
 }
 
+variable "app_command_line" {
+  type        = string
+  default     = ""
+  description = "Provide an optional startup command that will be run as part of container startup."
+}
+
 locals {
   default_plan_name = format("%s-plan", var.name)
 

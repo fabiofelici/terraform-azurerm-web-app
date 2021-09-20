@@ -50,6 +50,8 @@ resource "azurerm_app_service" "main" {
     php_version              = local.php_version
     python_version           = local.python_version
 
+    app_command_line         = var.app_command_line
+
     linux_fx_version = local.linux_fx_version
 
     dynamic "ip_restriction" {
